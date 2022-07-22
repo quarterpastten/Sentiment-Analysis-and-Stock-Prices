@@ -10,7 +10,7 @@ The steps covered in the [Jupyter Notebook](https://github.com/quarterpastten/ED
 
 <br>
 <img src="img/pipeline.jpg" alt="drawing" width="700"/>
-<br><br>
+<br>
 
 1.	Retrieve financial news headlines and specify a small selection of stocks over a short period of time. 
 2.	Retrieve the stock prices for these tickers for the given time.
@@ -23,11 +23,11 @@ The steps covered in the [Jupyter Notebook](https://github.com/quarterpastten/ED
 
 The headline data was obtained from a large [Kaggle](https://www.kaggle.com/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests?select=analyst_ratings_processed.csv) dataset of 6000+ stocks, whilst the stock price data was retrieved using Pandas Datareader, which allows us to create a dataframe based on Yahoo Finance data. We then choose two tickers which have a sufficient number of headlines over the same short period – TLSA (Tesla) and PCG (Pacific and Electric Company) – to work with. 
 
-<br><br>
+<br>
 
 <img src="img/data_headline_stock.jpg" alt="drawing" width="700"/>
 
-<br><br>
+<br>
 
 ### Preprocessing
 

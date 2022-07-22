@@ -4,7 +4,7 @@
 
 It seems plausible that financial news headlines can affect stock prices given that investors are often influenced by what they read in the news, and investors then affect prices. Accordingly, sentiment is often used in forecasting stocks as one indicator (among others). This project attempts to discover if any connection exists at all between news and stock price. The purpose here is not to try to forecast or predict anything – that requires many other factors – but just to detect any kind of correlation.
 
-There are many NLP models for sentiment analysis available, such as Vader and TextBlob. However, this project utilises FinBERT, a deep learning language model based on Google’s BERT model that was fine-tuned on financial text. (See the original research paper [here](https://arxiv.org/pdf/1908.10063v1.pdf)). 
+There are many NLP models for sentiment analysis available, such as Vader and TextBlob. However, this project utilises [FinBERT](https://huggingface.co/ProsusAI/finbert), a deep learning language model based on Google’s BERT, that was fine-tuned on financial text. (See the original research paper [here](https://arxiv.org/pdf/1908.10063v1.pdf)). 
 <br>
 
 The steps covered in the [Jupyter Notebook](https://github.com/quarterpastten/EDA-on-sentiment-analysis-and-stock-prices/blob/main/EDA_sentiment.ipynb) are as follows: 
@@ -22,7 +22,7 @@ The steps covered in the [Jupyter Notebook](https://github.com/quarterpastten/ED
 
 ### Data retrieval and preprocessing 
 
-The headline data was obtained from a large [Kaggle](https://www.kaggle.com/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests?select=analyst_ratings_processed.csv) dataset of 6000+ stocks, whilst the stock price data was retrieved using Pandas Datareader, which allows us to create a dataframe based on Yahoo Finance data. We then choose two tickers which have a sufficient number of headlines over the same short period – TLSA (Tesla) and PCG (Pacific and Electric Company) – to work with. 
+The headline data was obtained from a large [Kaggle](https://www.kaggle.com/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests?select=analyst_ratings_processed.csv) dataset with historical news data for 6000+ stocks, whilst the stock price data was retrieved using Pandas Datareader, which allows us to create a dataframe based on Yahoo Finance data. We then choose two tickers which have a sufficient number of headlines over a specified  short time-period – TLSA (Tesla) and PCG (Pacific and Electric Company) – to work with. 
 
 <br>
 

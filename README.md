@@ -41,7 +41,7 @@ Stock markets operate between certain times and so we need to ensure that a head
 
 The sentiment analysis is done using FinBERT, and implemented using the pipeline module that is included in the HuggingFace Transformers library. As seen below, raw headline data is inputted, and FinBERT returns three scores per headline: a positive, negative and a neutral score, each representing a probability between 0 and 1, and all summing to 1. To get a single score the negative value is simply subtracted from the positive value. 
 
-<br><br>
+<br>
 
 <img src="img/sentiment_analysis.jpg" alt="drawing" width="700"/>
 

@@ -40,7 +40,7 @@ Stock markets operate between certain times and so we need to ensure that a head
 
 ### Sentiment analysis with FinBERT
 
-The sentiment analysis is done using FinBERT, and implemented using the pipeline module that is included in the HuggingFace Transformers library. As seen below, raw headline data is inputted, and FinBERT returns three scores per headline: a positive, negative and a neutral score, each representing a probability between 0 and 1, and all summing to 1. To get a single score the negative value is simply subtracted from the positive value. 
+The sentiment analysis is done using [FinBERT](https://huggingface.co/ProsusAI/finbert), and implemented using the pipeline module that is included in the HuggingFace Transformers library. As seen below, raw headline data is inputted into the model, and FinBERT returns three scores per headline: a positive, negative and a neutral score, each representing a probability between 0 and 1, and all summing to 1. To get a single score the negative value is subtracted from the positive value. 
 
 <br>
 
@@ -60,7 +60,7 @@ The distribution of negative to positive headlines over time can then be obtaine
 
 ### Statistical analysis and tests for correlation
 
-Finally, we want to see if there is any correlation between sentiment and stock price over this time period. A number of preparatory steps are made to avoid ‘spurious’ correlations (i.e. mistakenly seeing correlations in time series that do not exist), including ensuring the time-series are stationary, i.e. have consistent mean and variance, and any trend or seasonality is removed. (This is all done using the statsmodels library). Finally, we may plot the cross-correlations between stock price and sentiment for each ticker: 
+With all the data prepared, the final task was to see if there is any correlation between sentiment and stock price over this time period. A number of preparatory steps were made to avoid ‘spurious’ correlations (i.e. mistakenly seeing correlations in time series that do not exist), including ensuring the time-series are <i>stationary</i>, i.e. have consistent mean and variance, and any trend or seasonality is removed. (This is all done using Python's statsmodels library). Finally, the cross-correlations between stock price and sentiment for each ticker were plotted: 
 
 <br>
 

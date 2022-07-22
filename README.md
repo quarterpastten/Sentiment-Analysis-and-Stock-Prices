@@ -7,7 +7,7 @@ It seems plausible that financial news headlines can affect stock prices given t
 There are many NLP models for sentiment analysis available, such as Vader and TextBlob. However, this project utilises [FinBERT](https://huggingface.co/ProsusAI/finbert), a deep learning language model based on Google’s BERT, that was fine-tuned on financial text. (See the original research paper [here](https://arxiv.org/pdf/1908.10063v1.pdf)). 
 <br>
 
-The steps covered in the [Jupyter Notebook](https://github.com/quarterpastten/EDA-on-sentiment-analysis-and-stock-prices/blob/main/EDA_sentiment.ipynb) are as follows: 
+This project was written in Python and the steps covered in the [Jupyter Notebook](https://github.com/quarterpastten/EDA-on-sentiment-analysis-and-stock-prices/blob/main/EDA_sentiment.ipynb) are as follows: 
 
 <br>
 <img src="img/pipeline.jpg" alt="drawing" width="700"/>

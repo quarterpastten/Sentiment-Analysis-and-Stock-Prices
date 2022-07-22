@@ -1,6 +1,6 @@
 # Comparing the Sentiments of Financial News Headlines to Stock Prices. 
 ### A Deep Learning Sentiment Analysis on News Headlines using <i>FinBERT</i>
-&nbsp;
+
 
 It seems plausible that financial news headlines can affect stock prices given that investors are often influenced by what they read in the news, and investors then affect prices. Accordingly, sentiment is often used in forecasting stocks as one indicator (among others). This project attempts to discover if any connection exists at all between news and stock price. The purpose here is not to try to forecast or predict anything – that requires many other factors – but just to detect any kind of correlation.
 

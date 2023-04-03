@@ -69,3 +69,5 @@ Finally, we want to see if there is any correlation between sentiment and stock 
 
 The blue lines are the confidence interval. Where the stems protrude outside of the confidence interval, the correlation is held to be significant. Here the plot suggests some negative correlation for PCG for this time period, though mainly at a significant lag. We find none for TSLA. So this is a mixed result. Further analysis would be required to form any firmer conclusions, including whether this pattern holds for these tickers at different time periods or different window sizes in time, or whether different tickers have any correlation. 
 
+
+
